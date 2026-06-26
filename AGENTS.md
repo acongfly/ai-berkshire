@@ -1,27 +1,30 @@
-# AI Berkshire — Claude Code 项目指令
+# AI Berkshire — Codex 项目指令
 
 ## 项目概述
 
-同时支持 Claude Code 与 Codex 的价值投资研究 Skill 合集。四大师框架：巴菲特、芒格、段永平、李录。
+同时支持 Codex 与 Claude Code 的价值投资研究 Skill 合集。四大师框架：巴菲特、芒格、段永平、李录。
 GitHub: xbtlin/ai-berkshire
 
 ## 项目结构
 
 ```
-skills/          — 投研 Skill 源文件（.md），复制到 ~/.claude/commands/ 使用
+skills/          — 投研 Skill 源文件（.md），Claude Code 直接复制到 ~/.claude/commands/
 .agents/skills/  — Codex repo skills 包装层，由 tools/sync_codex_skills.py 生成
 tools/           — 辅助工具（financial_rigor.py 精确计算）
 reports/         — 投资研究报告输出
 assets/          — 图片等静态资源
 ```
 
-## Claude Code 与 Codex 兼容规则
+## Codex 与 Claude Code 兼容规则
 
-- `skills/*.md` 是单一事实来源
-- Claude Code 调用：`/investment-team 腾讯`
-- Codex 调用：`$investment-team 腾讯`
-- 修改 `skills/*.md` 后运行：`python3 tools/sync_codex_skills.py`
-- 刷新 Claude Code commands：`python3 tools/install_ai_berkshire.py --target claude`
+- `skills/*.md` 是单一事实来源：新增或修改投研 workflow 时，优先改这里
+- Claude Code 调用方式：`/investment-team 腾讯`
+- Codex 调用方式：`$investment-team 腾讯`
+- 修改 `skills/*.md` 后必须运行：`python3 tools/sync_codex_skills.py`
+- 如果要刷新 Claude Code commands，运行：`python3 tools/install_ai_berkshire.py --target claude`
+- 不要手工修改 `.agents/skills/*/SKILL.md`，除非同时修改生成脚本；这些文件应由脚本生成
+- Codex 执行 skill 时，如原始 skill 提到 Claude Code 的 `Task` / `Agent` / `Team`，使用当前 Codex 会话可用的等价多代理能力；没有等价能力时，在当前会话分阶段执行并说明限制
+- Codex 执行涉及最新股价、财报、监管、新闻、宏观数据的任务时必须联网核验，并标注来源
 
 ## 报告目录结构
 

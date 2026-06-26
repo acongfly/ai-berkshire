@@ -6,9 +6,9 @@
 >
 > 用 AI 重新定义投资研究的深度与效率。
 
-**AI Berkshire** 是一套基于 [Claude Code](https://claude.ai/code) 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
+**AI Berkshire** 是一套同时支持 [Claude Code](https://claude.ai/code) 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
 
-一个人 + Claude = 一个投研团队。
+一个人 + Claude/Codex = 一个投研团队。
 
 ---
 
@@ -215,27 +215,43 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ## 快速开始
 
-### 1. 安装 Claude Code
+### 1. 安装 Claude Code 或 Codex
 
 ```bash
+# Claude Code
 npm install -g @anthropic-ai/claude-code
 ```
 
-### 2. 安装 Skills
+Codex 请按 OpenAI 官方方式安装并登录，然后从本仓库根目录启动。
 
-将 `skills/` 目录下的 `.md` 文件复制到你的 Claude Code commands 目录：
+### 2. 安装 / 刷新 Skills
+
+`skills/*.md` 是 Claude Code 与 Codex 共用的单一事实来源。
 
 ```bash
 # 克隆仓库
 git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
 
-# 复制 skills 到 Claude Code 全局 commands 目录
-cp ai-berkshire/skills/*.md ~/.claude/commands/
+# 同时安装 Claude Code commands，并刷新 Codex repo skills
+python3 tools/install_ai_berkshire.py
 ```
 
-### 3. 使用
+只刷新 Codex：
 
-在 Claude Code 中直接调用：
+```bash
+python3 tools/install_ai_berkshire.py --target codex
+```
+
+只安装 Claude Code：
+
+```bash
+python3 tools/install_ai_berkshire.py --target claude
+```
+
+### 3. 使用方式
+
+Claude Code 中使用 `/skill-name`：
 
 ```bash
 # 深度研究
@@ -263,6 +279,18 @@ cp ai-berkshire/skills/*.md ~/.claude/commands/
 # 思维工具
 /dyp-ask 拼多多的护城河到底在哪里？
 ```
+
+Codex 中使用 `$skill-name`：
+
+```text
+$investment-research 腾讯
+$investment-team 美团
+$earnings-review 腾讯 2025Q4
+$industry-funnel AI算力
+$portfolio-review 腾讯30%, 美团20%, 茅台20%, 现金30%
+```
+
+详细流程见：[Claude Code 与 Codex 使用指南](docs/codex-claude-usage.md)。
 
 ---
 

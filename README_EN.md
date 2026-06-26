@@ -6,9 +6,9 @@ English | [中文](README.md)
 >
 > Redefining the depth and efficiency of investment research with AI.
 
-**AI Berkshire** is a collection of investment research skills built on [Claude Code](https://claude.ai/code). It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
+**AI Berkshire** is a collection of investment research skills built for both [Claude Code](https://claude.ai/code) and Codex. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
 
-One person + Claude = an entire investment research team.
+One person + Claude/Codex = an entire investment research team.
 
 ---
 
@@ -216,27 +216,31 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 
 ## Quick Start
 
-### 1. Install Claude Code
+### 1. Install Claude Code or Codex
 
 ```bash
+# Claude Code
 npm install -g @anthropic-ai/claude-code
 ```
 
-### 2. Install Skills
+For Codex, install and sign in through the official OpenAI flow, then launch Codex from this repository root.
 
-Copy the `.md` files from the `skills/` directory to your Claude Code commands directory:
+### 2. Install / Refresh Skills
+
+`skills/*.md` is the single source of truth shared by Claude Code and Codex.
 
 ```bash
 # Clone the repository
 git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
 
-# Copy skills to Claude Code global commands directory
-cp ai-berkshire/skills/*.md ~/.claude/commands/
+# Install Claude Code commands and refresh Codex repo skills
+python3 tools/install_ai_berkshire.py
 ```
 
 ### 3. Use
 
-Invoke directly in Claude Code:
+In Claude Code, invoke with `/skill-name`:
 
 ```bash
 # Deep Research
@@ -264,6 +268,18 @@ Invoke directly in Claude Code:
 # Thinking Tools
 /dyp-ask Where is Pinduoduo's real moat?
 ```
+
+In Codex, invoke with `$skill-name`:
+
+```text
+$investment-research Tencent
+$investment-team Meituan
+$earnings-review Tencent 2025Q4
+$industry-funnel AI Compute
+$portfolio-review Tencent 30%, Meituan 20%, Moutai 20%, Cash 30%
+```
+
+Detailed Chinese guide: [Claude Code and Codex usage](docs/codex-claude-usage.md).
 
 ---
 
