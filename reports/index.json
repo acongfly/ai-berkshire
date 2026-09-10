@@ -1,6 +1,17 @@
 {
-  "count": 2332,
+  "count": 2333,
   "reports": [
+    {
+      "title": "沪深主板全市场去劣筛选：3,197 → 52（2026-09-10）",
+      "path": "reports/沪深主板全市场-去劣筛选-20260910.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "筛选",
+      "date": "2026-09-10",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "巴菲特买入前 Checklist：中国平安 / 招商银行 / 平安银行",
       "path": "reports/多公司对比-checklist-20260909.md",
