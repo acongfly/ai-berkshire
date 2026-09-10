@@ -1,5 +1,5 @@
 {
-  "count": 2334,
+  "count": 2335,
   "reports": [
     {
       "title": "沪深主板全市场去劣筛选：3,197 → 52（2026-09-10）",
@@ -19,6 +19,17 @@
       "group": "综合与横评",
       "series": "",
       "type": "横评对比",
+      "date": "2026-09-10",
+      "date_source": "front-matter",
+      "ticker": ""
+    },
+    {
+      "title": "A 档 27 家现金流可靠性压力测试 + PE 口径全市场核查",
+      "path": "reports/A档27家-现金流可靠性与PE口径全市场核查-20260910.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "筛选",
       "date": "2026-09-10",
       "date_source": "front-matter",
       "ticker": ""
