@@ -1,6 +1,17 @@
 {
-  "count": 2335,
+  "count": 2336,
   "reports": [
+    {
+      "title": "买入前 Checklist：农行/工行/建行/杭州/渝农/中信/新和成 + A 档公告扫描",
+      "path": "reports/A档七家-checklist与公告扫描-20260911.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "横评对比",
+      "date": "2026-09-11",
+      "date_source": "front-matter",
+      "ticker": ""
+    },
     {
       "title": "沪深主板全市场去劣筛选：3,197 → 52（2026-09-10）",
       "path": "reports/沪深主板全市场-去劣筛选-20260910.md",
