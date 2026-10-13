@@ -1,6 +1,94 @@
 {
-  "count": 2336,
+  "count": 2344,
   "reports": [
+    {
+      "title": "近期重点关注清单：股票 / ETF / 行业（沪深主板·股息导向）",
+      "path": "reports/近期重点关注清单-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "横评对比",
+      "date": "2026-10-13",
+      "date_source": "front-matter",
+      "ticker": ""
+    },
+    {
+      "title": "近月政策与宏观事件侦察（2026-09-11 → 2026-10-13）",
+      "path": "reports/近月政策与宏观事件-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "研究",
+      "date": "2026-10-13",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "红利/价值 ETF 复核（income-investment，ETF 版）",
+      "path": "reports/红利ETF复核-income-investment-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "底稿",
+      "date": "2026-10-13",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "买入前 Checklist：交通银行 / 沪农商行 / 美的集团 / 长江电力（+ 张家港行、无锡银行简评）",
+      "path": "reports/沪农交行美的长电-checklist-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "底稿",
+      "date": "2026-10-13",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "招商银行 / 中国平安：论文追踪 + 新闻脉搏 + 漂移检测（2026-10-13）",
+      "path": "reports/招行平安-thesis追踪-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "研究",
+      "date": "2026-10-13",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "A股行业/指数估值温度计（2026-10-13）",
+      "path": "reports/A股行业估值温度计-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "估值仓位",
+      "date": "2026-10-13",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "买入前 Checklist：A 档六家非金融（南方传媒/唐山港/皖通高速/小商品城/云天化/晨光）+ 电投能源、天山铝业简评",
+      "path": "reports/A档非金融六家-checklist-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "横评对比",
+      "date": "2026-10-13",
+      "date_source": "front-matter",
+      "ticker": ""
+    },
+    {
+      "title": "52 家去劣通过者：近 32 天公告扫描 + 三季报/中期分红日程（2026-10-13）",
+      "path": "reports/52家公告扫描与三季报日历-20261013.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "财报",
+      "date": "2026-10-13",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "买入前 Checklist：农行/工行/建行/杭州/渝农/中信/新和成 + A 档公告扫描",
       "path": "reports/A档七家-checklist与公告扫描-20260911.md",
